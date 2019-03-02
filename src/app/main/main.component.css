@@ -1,8 +1,32 @@
 .event-cards {
     margin: 0 auto;
     width: 50vw;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* transform: skewX(-10deg); */
+    padding: 5% 0%;
+}
+.diagonal {
+    position: absolute;
+    margin-left: 15%;
+top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.1);
+    z-index: 400;
+    transform: skewX(-10deg);
+    /* clip-path: polygon(10% 0, 0% 100%, 90% 100%, 100% 0%); */
+    /* opacity: 0.5; */
+    overflow-y: scroll;
+overflow-x: hidden;
 }
 
-*{
-    text-align: center;
+img {
+    width: 95%;
+    clip-path: polygon(10% 0, 0% 100%, 90% 100%, 100% 0%);
+    transform: skewX(10deg);
 }
+
+/* *{
+    text-align: center;
+    
+} */

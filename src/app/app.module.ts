@@ -11,7 +11,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
-import {MatSidenavModule} from '@angular/material/sidenav';
 
 // ================== //
 //  Firebase Imports  //
@@ -27,15 +26,16 @@ import { environment } from '../environments/environment';
 //  Component Imports  //
 // =================== //
 
-import { CardComponent } from './card/card.component';
 import { MainComponent } from './main/main.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    MainComponent
+
+    MainComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -45,7 +45,6 @@ import { MainComponent } from './main/main.component';
     MatButtonModule, 
     MatCheckboxModule,
     MatCardModule,
-    MatSidenavModule,
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, "geminilove"),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
